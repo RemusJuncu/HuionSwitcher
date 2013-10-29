@@ -13,7 +13,7 @@ Menu, tray, NoStandard
 ; Menu, Tray, Icon, disabled.ico, , 1
 Menu, tray, add, Huion7.0, ToggleHotKey ; enable disable the hotkeys
 Menu, tray, add ; Creates a separator line.
-Menu, tray, add, Open Pref, HuiPref ; Open Huion Preferences
+Menu, tray, add, Open Pref, BamPref ; Open Huion Preferences
 Menu, tray, add, Shortcuts, shortcuts ; Creates a new menu item.
 Menu, tray, add ; Creates a separator line.
 Menu, tray, add, Website, website ; Creates a new menu item.
@@ -50,7 +50,7 @@ ToggleHotKey:
 Return
 
 ; Open Huion Pref
-HuiPref:
+BamPref:
    run, %A_WinDir%\System32\TabCfg.exe
 Return
 
